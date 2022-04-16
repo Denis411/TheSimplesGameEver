@@ -10,18 +10,29 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+    var router: MainRouterProtocol?
+    var dataContainer: DataContainerProtocol?
+    var navController: UINavigationController?
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let scene = (scene as? UIWindowScene) else { return }
-        setMainViewController(scene: scene)
+        initVariables()
+        setInitialVC(scene: scene)
     }
     
-    private func setMainViewController(scene: UIWindowScene) {
+    private func setInitialVC(scene: UIWindowScene) {
         window = UIWindow(windowScene: scene)
-        let initialVC = PlayerThinkingOfNumberViewController()
-        window?.rootViewController = initialVC
+        window?.rootViewController = navController
         window?.makeKeyAndVisible()
+        router?.pushStartVC()
+    }
+    
+    private func initVariables() {
+        dataContainer = DataContainer(playersNumber: 0, computersNumber: 0)
+        navController = UINavigationController()
+        navController?.navigationBar.isHidden = true
+        router = MainRouter(navController: navController!, dataContainer: DataContainer.shared)
     }
 }
 
