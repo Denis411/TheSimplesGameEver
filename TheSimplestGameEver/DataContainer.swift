@@ -29,7 +29,7 @@ class DataContainer: DataContainerProtocol {
     }
 }
 
-protocol DataContainerProtocol {
+protocol DataContainerProtocol: AnyObject {
     var playerNumOfTries: Int8 { set get }
     var playersNumber: Int8 { set get }
     var computerNumOfTries: Int8 { set get }
@@ -38,40 +38,40 @@ protocol DataContainerProtocol {
 
 extension DataContainerProtocol {
     //   MARK: - player
-    mutating func setPlayerNumOfTries(num: Int8) {
+    func setPlayerNumOfTries(num: Int8) {
         self.playerNumOfTries = num
     }
     
-    mutating func setPlayersNumber(num: Int8) {
+    func setPlayersNumber(num: Int8) {
         self.playersNumber = num
     }
     
-    mutating func getPlayerNumOfTries() -> Int8 {
+    func getPlayerNumOfTries() -> Int8 {
         self.playerNumOfTries
     }
     
-    mutating func getPlayersNumber() -> Int8 {
+    func getPlayersNumber() -> Int8 {
         self.playersNumber
     }
     
     //   MARK: - computer
-    mutating func setCmputerNumOfTries(num: Int8) {
+    func setCmputerNumOfTries(num: Int8) {
         self.computerNumOfTries = num
     }
     
-    mutating func setComputersNumber(num: Int8) {
+    func setComputersNumber(num: Int8) {
         self.computersNumber = num
     }
     
-    mutating func getComputerNumOfTries() -> Int8 {
+    func getComputerNumOfTries() -> Int8 {
         self.computerNumOfTries
     }
     
-    mutating func getComputersNumber() -> Int8 {
+    func getComputersNumber() -> Int8 {
         self.computersNumber
     }
     
-    mutating func nullifySelf() {
+    func nullifySelf() {
         self.playerNumOfTries = 0
         self.playersNumber = 0
         self.computerNumOfTries = 0
