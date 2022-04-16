@@ -20,6 +20,8 @@
 		6772E6B0280AD20500565376 /* DataContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6772E6AF280AD20500565376 /* DataContainer.swift */; };
 		6772E6B8280AD51B00565376 /* TheSimplestGameEverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6772E6B7280AD51B00565376 /* TheSimplestGameEverTests.swift */; };
 		6772E6BF280AD9A100565376 /* XCDataContainerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6772E6BE280AD9A100565376 /* XCDataContainerTest.swift */; };
+		6772E6C1280AE10D00565376 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6772E6C0280AE10D00565376 /* MainRouter.swift */; };
+		6772E6C3280AE13D00565376 /* MainRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6772E6C2280AE13D00565376 /* MainRouterProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		6772E6B5280AD51B00565376 /* TheSimplestGameEverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheSimplestGameEverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6772E6B7280AD51B00565376 /* TheSimplestGameEverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheSimplestGameEverTests.swift; sourceTree = "<group>"; };
 		6772E6BE280AD9A100565376 /* XCDataContainerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCDataContainerTest.swift; sourceTree = "<group>"; };
+		6772E6C0280AE10D00565376 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		6772E6C2280AE13D00565376 /* MainRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouterProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,11 +97,13 @@
 		6772E67E280A9B7300565376 /* TheSimplestGameEver */ = {
 			isa = PBXGroup;
 			children = (
+				6772E6C0280AE10D00565376 /* MainRouter.swift */,
+				6772E6C2280AE13D00565376 /* MainRouterProtocol.swift */,
+				6772E6AF280AD20500565376 /* DataContainer.swift */,
 				6772E6AE280AD1EA00565376 /* Presenters */,
 				6772E693280A9BC000565376 /* Standards */,
 				6772E696280AA3A400565376 /* SharedViews */,
 				6772E697280AA3C900565376 /* Screens */,
-				6772E6AF280AD20500565376 /* DataContainer.swift */,
 			);
 			path = TheSimplestGameEver;
 			sourceTree = "<group>";
@@ -253,8 +259,10 @@
 			files = (
 				6772E6AD280AC1DB00565376 /* CustomTextField.swift in Sources */,
 				6772E695280A9D5100565376 /* CustomBlueButton.swift in Sources */,
+				6772E6C3280AE13D00565376 /* MainRouterProtocol.swift in Sources */,
 				6772E684280A9B7300565376 /* StartViewController.swift in Sources */,
 				6772E6B0280AD20500565376 /* DataContainer.swift in Sources */,
+				6772E6C1280AE10D00565376 /* MainRouter.swift in Sources */,
 				6772E680280A9B7300565376 /* AppDelegate.swift in Sources */,
 				6772E6AB280ABE1500565376 /* PlayerThinkingOfNumberViewController.swift in Sources */,
 				6772E6A9280AB1CA00565376 /* CenteredCustomLabel.swift in Sources */,
