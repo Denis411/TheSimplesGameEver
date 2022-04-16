@@ -35,3 +35,15 @@ class CustomBlueButton: UIButton {
         self.bottomAnchor.constraint(equalTo: controller.view.bottomAnchor, constant: -25).isActive = true
     }
 }
+
+extension CustomBlueButton {
+    func blockButton(_ isBlocked: Bool) {
+        if isBlocked {
+            self.isUserInteractionEnabled = false
+            self.layer.backgroundColor = UIColor.gray.cgColor
+        } else {
+            self.isUserInteractionEnabled = false
+            self.layer.backgroundColor = UIColor.blue.cgColor
+        }
+    }
+}
