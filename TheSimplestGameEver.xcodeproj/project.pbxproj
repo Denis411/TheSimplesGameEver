@@ -17,7 +17,20 @@
 		6772E6A9280AB1CA00565376 /* CenteredCustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6772E6A8280AB1CA00565376 /* CenteredCustomLabel.swift */; };
 		6772E6AB280ABE1500565376 /* PlayerThinkingOfNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6772E6AA280ABE1500565376 /* PlayerThinkingOfNumberViewController.swift */; };
 		6772E6AD280AC1DB00565376 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6772E6AC280AC1DB00565376 /* CustomTextField.swift */; };
+		6772E6B0280AD20500565376 /* DataContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6772E6AF280AD20500565376 /* DataContainer.swift */; };
+		6772E6B8280AD51B00565376 /* TheSimplestGameEverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6772E6B7280AD51B00565376 /* TheSimplestGameEverTests.swift */; };
+		6772E6BF280AD9A100565376 /* XCDataContainerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6772E6BE280AD9A100565376 /* XCDataContainerTest.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6772E6B9280AD51B00565376 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6772E674280A9B7300565376 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6772E67B280A9B7300565376;
+			remoteInfo = TheSimplestGameEver;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		6772E67C280A9B7300565376 /* TheSimplestGameEver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheSimplestGameEver.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -34,10 +47,21 @@
 		6772E6A8280AB1CA00565376 /* CenteredCustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenteredCustomLabel.swift; sourceTree = "<group>"; };
 		6772E6AA280ABE1500565376 /* PlayerThinkingOfNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerThinkingOfNumberViewController.swift; sourceTree = "<group>"; };
 		6772E6AC280AC1DB00565376 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		6772E6AF280AD20500565376 /* DataContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataContainer.swift; sourceTree = "<group>"; };
+		6772E6B5280AD51B00565376 /* TheSimplestGameEverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheSimplestGameEverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6772E6B7280AD51B00565376 /* TheSimplestGameEverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheSimplestGameEverTests.swift; sourceTree = "<group>"; };
+		6772E6BE280AD9A100565376 /* XCDataContainerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCDataContainerTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		6772E679280A9B7300565376 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6772E6B2280AD51B00565376 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -52,6 +76,7 @@
 			children = (
 				6772E6A2280AA61E00565376 /* Localizable.strings */,
 				6772E67E280A9B7300565376 /* TheSimplestGameEver */,
+				6772E6B6280AD51B00565376 /* TheSimplestGameEverTests */,
 				6772E67D280A9B7300565376 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				6772E67C280A9B7300565376 /* TheSimplestGameEver.app */,
+				6772E6B5280AD51B00565376 /* TheSimplestGameEverTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,9 +93,11 @@
 		6772E67E280A9B7300565376 /* TheSimplestGameEver */ = {
 			isa = PBXGroup;
 			children = (
+				6772E6AE280AD1EA00565376 /* Presenters */,
+				6772E693280A9BC000565376 /* Standards */,
 				6772E696280AA3A400565376 /* SharedViews */,
 				6772E697280AA3C900565376 /* Screens */,
-				6772E693280A9BC000565376 /* Standards */,
+				6772E6AF280AD20500565376 /* DataContainer.swift */,
 			);
 			path = TheSimplestGameEver;
 			sourceTree = "<group>";
@@ -105,6 +133,22 @@
 			path = Screens;
 			sourceTree = "<group>";
 		};
+		6772E6AE280AD1EA00565376 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		6772E6B6280AD51B00565376 /* TheSimplestGameEverTests */ = {
+			isa = PBXGroup;
+			children = (
+				6772E6B7280AD51B00565376 /* TheSimplestGameEverTests.swift */,
+				6772E6BE280AD9A100565376 /* XCDataContainerTest.swift */,
+			);
+			path = TheSimplestGameEverTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -125,6 +169,24 @@
 			productReference = 6772E67C280A9B7300565376 /* TheSimplestGameEver.app */;
 			productType = "com.apple.product-type.application";
 		};
+		6772E6B4280AD51B00565376 /* TheSimplestGameEverTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6772E6BB280AD51B00565376 /* Build configuration list for PBXNativeTarget "TheSimplestGameEverTests" */;
+			buildPhases = (
+				6772E6B1280AD51B00565376 /* Sources */,
+				6772E6B2280AD51B00565376 /* Frameworks */,
+				6772E6B3280AD51B00565376 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6772E6BA280AD51B00565376 /* PBXTargetDependency */,
+			);
+			name = TheSimplestGameEverTests;
+			productName = TheSimplestGameEverTests;
+			productReference = 6772E6B5280AD51B00565376 /* TheSimplestGameEverTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -137,6 +199,10 @@
 				TargetAttributes = {
 					6772E67B280A9B7300565376 = {
 						CreatedOnToolsVersion = 13.2.1;
+					};
+					6772E6B4280AD51B00565376 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 6772E67B280A9B7300565376;
 					};
 				};
 			};
@@ -155,6 +221,7 @@
 			projectRoot = "";
 			targets = (
 				6772E67B280A9B7300565376 /* TheSimplestGameEver */,
+				6772E6B4280AD51B00565376 /* TheSimplestGameEverTests */,
 			);
 		};
 /* End PBXProject section */
@@ -170,6 +237,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6772E6B3280AD51B00565376 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -180,6 +254,7 @@
 				6772E6AD280AC1DB00565376 /* CustomTextField.swift in Sources */,
 				6772E695280A9D5100565376 /* CustomBlueButton.swift in Sources */,
 				6772E684280A9B7300565376 /* StartViewController.swift in Sources */,
+				6772E6B0280AD20500565376 /* DataContainer.swift in Sources */,
 				6772E680280A9B7300565376 /* AppDelegate.swift in Sources */,
 				6772E6AB280ABE1500565376 /* PlayerThinkingOfNumberViewController.swift in Sources */,
 				6772E6A9280AB1CA00565376 /* CenteredCustomLabel.swift in Sources */,
@@ -187,7 +262,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6772E6B1280AD51B00565376 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6772E6BF280AD9A100565376 /* XCDataContainerTest.swift in Sources */,
+				6772E6B8280AD51B00565376 /* TheSimplestGameEverTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6772E6BA280AD51B00565376 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6772E67B280A9B7300565376 /* TheSimplestGameEver */;
+			targetProxy = 6772E6B9280AD51B00565376 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6772E68A280A9B7700565376 /* LaunchScreen.storyboard */ = {
@@ -383,6 +475,40 @@
 			};
 			name = Release;
 		};
+		6772E6BC280AD51B00565376 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.TheSimplestGameEverTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheSimplestGameEver.app/TheSimplestGameEver";
+			};
+			name = Debug;
+		};
+		6772E6BD280AD51B00565376 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.TheSimplestGameEverTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheSimplestGameEver.app/TheSimplestGameEver";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -400,6 +526,15 @@
 			buildConfigurations = (
 				6772E691280A9B7700565376 /* Debug */,
 				6772E692280A9B7700565376 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6772E6BB280AD51B00565376 /* Build configuration list for PBXNativeTarget "TheSimplestGameEverTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6772E6BC280AD51B00565376 /* Debug */,
+				6772E6BD280AD51B00565376 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
