@@ -56,9 +56,9 @@
 		6772E67E280A9B7300565376 /* TheSimplestGameEver */ = {
 			isa = PBXGroup;
 			children = (
-				6772E683280A9B7300565376 /* ViewController.swift */,
+				6772E696280AA3A400565376 /* SharedViews */,
+				6772E697280AA3C900565376 /* Screens */,
 				6772E693280A9BC000565376 /* Standards */,
-				6772E694280A9D5000565376 /* CustomBlueButton.swift */,
 			);
 			path = TheSimplestGameEver;
 			sourceTree = "<group>";
@@ -73,6 +73,22 @@
 				6772E68D280A9B7700565376 /* Info.plist */,
 			);
 			path = Standards;
+			sourceTree = "<group>";
+		};
+		6772E696280AA3A400565376 /* SharedViews */ = {
+			isa = PBXGroup;
+			children = (
+				6772E694280A9D5000565376 /* CustomBlueButton.swift */,
+			);
+			path = SharedViews;
+			sourceTree = "<group>";
+		};
+		6772E697280AA3C900565376 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				6772E683280A9B7300565376 /* ViewController.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
