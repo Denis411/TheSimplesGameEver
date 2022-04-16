@@ -15,6 +15,8 @@
 		6772E695280A9D5100565376 /* CustomBlueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6772E694280A9D5000565376 /* CustomBlueButton.swift */; };
 		6772E6A0280AA61E00565376 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6772E6A2280AA61E00565376 /* Localizable.strings */; };
 		6772E6A9280AB1CA00565376 /* CenteredCustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6772E6A8280AB1CA00565376 /* CenteredCustomLabel.swift */; };
+		6772E6AB280ABE1500565376 /* PlayerThinkingOfNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6772E6AA280ABE1500565376 /* PlayerThinkingOfNumberViewController.swift */; };
+		6772E6AD280AC1DB00565376 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6772E6AC280AC1DB00565376 /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		6772E6A1280AA61E00565376 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6772E6A3280AA62200565376 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6772E6A8280AB1CA00565376 /* CenteredCustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenteredCustomLabel.swift; sourceTree = "<group>"; };
+		6772E6AA280ABE1500565376 /* PlayerThinkingOfNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerThinkingOfNumberViewController.swift; sourceTree = "<group>"; };
+		6772E6AC280AC1DB00565376 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,7 @@
 			children = (
 				6772E694280A9D5000565376 /* CustomBlueButton.swift */,
 				6772E6A8280AB1CA00565376 /* CenteredCustomLabel.swift */,
+				6772E6AC280AC1DB00565376 /* CustomTextField.swift */,
 			);
 			path = SharedViews;
 			sourceTree = "<group>";
@@ -95,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				6772E683280A9B7300565376 /* StartViewController.swift */,
+				6772E6AA280ABE1500565376 /* PlayerThinkingOfNumberViewController.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -171,9 +177,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6772E6AD280AC1DB00565376 /* CustomTextField.swift in Sources */,
 				6772E695280A9D5100565376 /* CustomBlueButton.swift in Sources */,
 				6772E684280A9B7300565376 /* StartViewController.swift in Sources */,
 				6772E680280A9B7300565376 /* AppDelegate.swift in Sources */,
+				6772E6AB280ABE1500565376 /* PlayerThinkingOfNumberViewController.swift in Sources */,
 				6772E6A9280AB1CA00565376 /* CenteredCustomLabel.swift in Sources */,
 				6772E682280A9B7300565376 /* SceneDelegate.swift in Sources */,
 			);
