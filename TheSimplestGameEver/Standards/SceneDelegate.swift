@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     private func setMainViewController(scene: UIWindowScene) {
         window = UIWindow(windowScene: scene)
-        let initialVC = StartViewController()
+        let initialVC = PlayerThinkingOfNumberViewController()
         window?.rootViewController = initialVC
         window?.makeKeyAndVisible()
     }
