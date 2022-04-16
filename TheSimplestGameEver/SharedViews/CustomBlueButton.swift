@@ -42,7 +42,7 @@ extension CustomBlueButton {
             self.isUserInteractionEnabled = false
             self.layer.backgroundColor = UIColor.gray.cgColor
         } else {
-            self.isUserInteractionEnabled = false
+            self.isUserInteractionEnabled = true
             self.layer.backgroundColor = UIColor.blue.cgColor
         }
     }
