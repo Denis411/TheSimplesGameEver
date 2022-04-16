@@ -11,14 +11,14 @@ class CenteredCustomLabel: UILabel {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setUpStyle()
+        setUpAppearance()
     }
     
     required init?(coder: NSCoder) {
         fatalError("I don't use storyboards in the project")
     }
     
-    private func setUpStyle() {
+    private func setUpAppearance() {
         self.backgroundColor = .clear
         self.textColor = .blue
         self.textAlignment = .center
