@@ -8,6 +8,8 @@
 import UIKit
 
 class StartViewController: UIViewController {
+    weak var router: MainRouterProtocol?
+    
     let gameNameTitle: CenteredCustomLabel = {
         let label = CenteredCustomLabel()
         let title = NSLocalizedString("game_name", comment: "")
@@ -40,7 +42,7 @@ class StartViewController: UIViewController {
     }
     
     @objc private func openNextScreen() {
-        
+        router?.pushPlayerThinkingVC()
     }
 }
 
