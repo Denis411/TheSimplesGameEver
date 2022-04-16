@@ -100,7 +100,6 @@
 				6772E6C0280AE10D00565376 /* MainRouter.swift */,
 				6772E6C2280AE13D00565376 /* MainRouterProtocol.swift */,
 				6772E6AF280AD20500565376 /* DataContainer.swift */,
-				6772E6AE280AD1EA00565376 /* Presenters */,
 				6772E693280A9BC000565376 /* Standards */,
 				6772E696280AA3A400565376 /* SharedViews */,
 				6772E697280AA3C900565376 /* Screens */,
@@ -137,13 +136,6 @@
 				6772E6AA280ABE1500565376 /* PlayerThinkingOfNumberViewController.swift */,
 			);
 			path = Screens;
-			sourceTree = "<group>";
-		};
-		6772E6AE280AD1EA00565376 /* Presenters */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Presenters;
 			sourceTree = "<group>";
 		};
 		6772E6B6280AD51B00565376 /* TheSimplestGameEverTests */ = {
