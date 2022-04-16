@@ -22,6 +22,7 @@
 		6772E6BF280AD9A100565376 /* XCDataContainerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6772E6BE280AD9A100565376 /* XCDataContainerTest.swift */; };
 		6772E6C1280AE10D00565376 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6772E6C0280AE10D00565376 /* MainRouter.swift */; };
 		6772E6C3280AE13D00565376 /* MainRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6772E6C2280AE13D00565376 /* MainRouterProtocol.swift */; };
+		6772E6CA280AF63800565376 /* PlayerThinkingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6772E6C9280AF63800565376 /* PlayerThinkingPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		6772E6BE280AD9A100565376 /* XCDataContainerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCDataContainerTest.swift; sourceTree = "<group>"; };
 		6772E6C0280AE10D00565376 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
 		6772E6C2280AE13D00565376 /* MainRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouterProtocol.swift; sourceTree = "<group>"; };
+		6772E6C9280AF63800565376 /* PlayerThinkingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerThinkingPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,7 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				6772E683280A9B7300565376 /* StartViewController.swift */,
-				6772E6AA280ABE1500565376 /* PlayerThinkingOfNumberViewController.swift */,
+				6772E6C8280AF59000565376 /* PlayerThinkingScreen */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -145,6 +147,15 @@
 				6772E6BE280AD9A100565376 /* XCDataContainerTest.swift */,
 			);
 			path = TheSimplestGameEverTests;
+			sourceTree = "<group>";
+		};
+		6772E6C8280AF59000565376 /* PlayerThinkingScreen */ = {
+			isa = PBXGroup;
+			children = (
+				6772E6AA280ABE1500565376 /* PlayerThinkingOfNumberViewController.swift */,
+				6772E6C9280AF63800565376 /* PlayerThinkingPresenter.swift */,
+			);
+			path = PlayerThinkingScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,6 +265,7 @@
 				6772E6C3280AE13D00565376 /* MainRouterProtocol.swift in Sources */,
 				6772E684280A9B7300565376 /* StartViewController.swift in Sources */,
 				6772E6B0280AD20500565376 /* DataContainer.swift in Sources */,
+				6772E6CA280AF63800565376 /* PlayerThinkingPresenter.swift in Sources */,
 				6772E6C1280AE10D00565376 /* MainRouter.swift in Sources */,
 				6772E680280A9B7300565376 /* AppDelegate.swift in Sources */,
 				6772E6AB280ABE1500565376 /* PlayerThinkingOfNumberViewController.swift in Sources */,
