@@ -1,3 +1,7 @@
 // Main screen
 "game_name" = "My awesome game";
 "start_new_game" = "Start New Game";
+
+// PlayerThinkingOfNumber screen
+"enter_the_number" = "Enter the Number";
+"think_of_a_number" = "Think of some number";

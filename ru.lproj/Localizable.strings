@@ -1,3 +1,7 @@
 // Main screen
 "game_name" = "Моя классная игра";
 "start_new_game" = "Начать новую игру";
+
+// PlayerThinkingOfNumber screen
+"enter_the_number" = "Ввести номер";
+"think_of_a_number" = "Загадайте число";
