@@ -32,7 +32,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         dataContainer = DataContainer(playersNumber: 0, computersNumber: 0)
         navController = UINavigationController()
         navController?.navigationBar.isHidden = true
-        router = MainRouter(navController: navController!, dataContainer: DataContainer.shared)
+        router = MainRouter(navController: navController!, dataContainer: dataContainer as! DataContainerProtocol)
     }
 }
 

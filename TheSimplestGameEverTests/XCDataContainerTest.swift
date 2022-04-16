@@ -12,7 +12,7 @@ class XCDataContainerTest: XCTestCase {
     var dataContainer = DataContainer(playersNumber: 0, computersNumber: 0)
     
     override func setUpWithError() throws {
-        DataContainer.shared.nullifySelf()
+        dataContainer.nullifySelf()
     }
 
     override func tearDownWithError() throws {
@@ -20,26 +20,26 @@ class XCDataContainerTest: XCTestCase {
     }
 
     func test_get_and_set_player_num_of_tries() {
-        DataContainer.shared.setPlayerNumOfTries(num: 100)
-        let playerTries = DataContainer.shared.getPlayerNumOfTries()
+        dataContainer.setPlayerNumOfTries(num: 100)
+        let playerTries = dataContainer.getPlayerNumOfTries()
         XCTAssertTrue(playerTries == 100)
     }
     
     func test_get_and_set_computer_num_of_tries() {
-        DataContainer.shared.setCmputerNumOfTries(num: 99)
-        let computerTries = DataContainer.shared.getComputerNumOfTries()
+        dataContainer.setCmputerNumOfTries(num: 99)
+        let computerTries = dataContainer.getComputerNumOfTries()
         XCTAssertTrue(computerTries == 99)
     }
     
     func test_get_and_set_players_number() {
-        DataContainer.shared.setPlayersNumber(num: 5)
-        let playersNumber = DataContainer.shared.getPlayersNumber()
+        dataContainer.setPlayersNumber(num: 5)
+        let playersNumber = dataContainer.getPlayersNumber()
         XCTAssertTrue(playersNumber == 5)
     }
     
     func test_get_and_set_computers_number() {
-        DataContainer.shared.setComputersNumber(num: 4)
-        let playersNumber = DataContainer.shared.getComputersNumber()
+        dataContainer.setComputersNumber(num: 4)
+        let playersNumber = dataContainer.getComputersNumber()
         XCTAssertTrue(playersNumber == 4)
     }
 }

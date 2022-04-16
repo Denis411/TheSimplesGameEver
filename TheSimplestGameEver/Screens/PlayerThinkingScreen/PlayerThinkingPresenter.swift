@@ -14,11 +14,7 @@ class PlayerThinkingPresenter: PlayerThinkingPresenterProtocol {
     
     init(vc: PlayerThikingVCProtocol, dataContainer: DataContainerProtocol) {
         self.view = vc
-    }
-    
-    convenience init(vc: PlayerThikingVCProtocol) {
-        let dataContainer = DataContainer.shared
-        self.init(vc: vc, dataContainer: dataContainer)
+        self.dataContainer = dataContainer
     }
     
     func validateString(string: String) {

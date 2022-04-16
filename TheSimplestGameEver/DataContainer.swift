@@ -9,14 +9,13 @@ import Foundation
 import UIKit
 
 class DataContainer: DataContainerProtocol {
-    static var shared = DataContainer(playersNumber: -1, computersNumber: -1)
     
     var playerNumOfTries: Int8
     var playersNumber: Int8
     var computerNumOfTries: Int8
     var computersNumber: Int8
     
-    init(playerNumOfTries: Int8, playersNumber: Int8, computerNumOfTries: Int8, computersNumber: Int8 ) {
+    init(playerNumOfTries: Int8, playersNumber: Int8, computerNumOfTries: Int8, computersNumber: Int8 = Int8.random(in: 0...100)) {
         self.playerNumOfTries = playerNumOfTries
         self.playersNumber = playersNumber
         self.computerNumOfTries = computerNumOfTries

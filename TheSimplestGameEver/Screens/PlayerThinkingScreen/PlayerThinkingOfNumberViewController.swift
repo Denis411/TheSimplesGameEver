@@ -43,7 +43,7 @@ class PlayerThinkingOfNumberViewController: UIViewController {
     
     @objc private func openNextVC() {
         presenter?.savePlayersNum(string: textFieldForNumber.text)
-        router?.pushThirdVC()
+        router?.pushComputerIsGuessingVC()
     }
     
     @objc private func validateString() {

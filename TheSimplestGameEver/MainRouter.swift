@@ -25,12 +25,14 @@ class MainRouter : MainRouterProtocol {
     
     func pushPlayerThinkingVC() {
         let playerThinkingVC = PlayerThinkingOfNumberViewController()
-        playerThinkingVC.presenter = PlayerThinkingPresenter(vc: playerThinkingVC)
+        playerThinkingVC.presenter = PlayerThinkingPresenter(vc: playerThinkingVC, dataContainer: dataContainer)
         playerThinkingVC.router = self
         navController.pushViewController(playerThinkingVC, animated: true)
     }
     
-    func pushThirdVC() {
-
+    func pushComputerIsGuessingVC() {
+        let computerIsGuessingVC = ComputerIsGessingViewController()
+        computerIsGuessingVC.router = self
+        navController.pushViewController(computerIsGuessingVC, animated: true)
     }
 }
