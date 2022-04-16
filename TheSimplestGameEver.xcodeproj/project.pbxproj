@@ -13,6 +13,7 @@
 		6772E689280A9B7700565376 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6772E688280A9B7700565376 /* Assets.xcassets */; };
 		6772E68C280A9B7700565376 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6772E68A280A9B7700565376 /* LaunchScreen.storyboard */; };
 		6772E695280A9D5100565376 /* CustomBlueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6772E694280A9D5000565376 /* CustomBlueButton.swift */; };
+		6772E6A0280AA61E00565376 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6772E6A2280AA61E00565376 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,8 @@
 		6772E68D280A9B7700565376 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6772E694280A9D5000565376 /* CustomBlueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBlueButton.swift; sourceTree = "<group>"; };
 		6772E69D280AA56200565376 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		6772E6A1280AA61E00565376 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		6772E6A3280AA62200565376 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +44,7 @@
 		6772E673280A9B7300565376 = {
 			isa = PBXGroup;
 			children = (
+				6772E6A2280AA61E00565376 /* Localizable.strings */,
 				6772E67E280A9B7300565376 /* TheSimplestGameEver */,
 				6772E67D280A9B7300565376 /* Products */,
 			);
@@ -152,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6772E68C280A9B7700565376 /* LaunchScreen.storyboard in Resources */,
+				6772E6A0280AA61E00565376 /* Localizable.strings in Resources */,
 				6772E689280A9B7700565376 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -180,6 +185,15 @@
 				6772E69D280AA56200565376 /* ru */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		6772E6A2280AA61E00565376 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6772E6A1280AA61E00565376 /* en */,
+				6772E6A3280AA62200565376 /* ru */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
