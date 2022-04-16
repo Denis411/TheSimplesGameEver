@@ -56,15 +56,23 @@
 		6772E67E280A9B7300565376 /* TheSimplestGameEver */ = {
 			isa = PBXGroup;
 			children = (
+				6772E683280A9B7300565376 /* ViewController.swift */,
+				6772E693280A9BC000565376 /* Standards */,
+			);
+			path = TheSimplestGameEver;
+			sourceTree = "<group>";
+		};
+		6772E693280A9BC000565376 /* Standards */ = {
+			isa = PBXGroup;
+			children = (
 				6772E67F280A9B7300565376 /* AppDelegate.swift */,
 				6772E681280A9B7300565376 /* SceneDelegate.swift */,
-				6772E683280A9B7300565376 /* ViewController.swift */,
 				6772E685280A9B7300565376 /* Main.storyboard */,
 				6772E688280A9B7700565376 /* Assets.xcassets */,
 				6772E68A280A9B7700565376 /* LaunchScreen.storyboard */,
 				6772E68D280A9B7700565376 /* Info.plist */,
 			);
-			path = TheSimplestGameEver;
+			path = Standards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,7 +298,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TheSimplestGameEver/Info.plist;
+				INFOPLIST_FILE = TheSimplestGameEver/Standards/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +325,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TheSimplestGameEver/Info.plist;
+				INFOPLIST_FILE = TheSimplestGameEver/Standards/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
