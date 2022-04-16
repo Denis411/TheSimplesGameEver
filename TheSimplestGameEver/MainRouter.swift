@@ -25,6 +25,7 @@ class MainRouter : MainRouterProtocol {
     
     func pushPlayerThinkingVC() {
         let playerThinkingVC = PlayerThinkingOfNumberViewController()
+        playerThinkingVC.presenter = PlayerThinkingPresenter(vc: playerThinkingVC)
         playerThinkingVC.router = self
         navController.pushViewController(playerThinkingVC, animated: true)
     }
