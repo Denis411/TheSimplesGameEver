@@ -22,7 +22,7 @@ class PlayerThinkingOfNumberViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .green
+        view.backgroundColor = .white
         NotificationCenter.default.addObserver(self, selector: #selector(validateString), name: UITextField.textDidChangeNotification , object: nil)
         
         enterNumberButton.addTarget(self, action: #selector(openNextVC), for: .touchUpInside)
