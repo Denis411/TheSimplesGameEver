@@ -13,6 +13,7 @@ IOS target: 15.2, but might work on 13.0 as well
 Localization: EN/RU
 
 Drawbacks: 
+
 1)I did not finish working with keyboard when using on a real device.
 
 2)Landscape layout is buggy.
