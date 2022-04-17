@@ -12,6 +12,10 @@
 "your_number_is" = "Ваш номер - ";
 "my_number_is" = "Мой нщмер ...";
 
+// PlayerGuessingVC
+"comp_num_less" = "Номер компьютера меньше";
+"comp_num_greater" = "Номер компьютера больше";
+
 // Final VC
 "score" = "Оценка:";
 "players_tries_count" = "Ваши попытки учтены: ";

@@ -12,6 +12,10 @@
 "your_number_is" = "Your number is - ";
 "my_number_is" = "My number is ...";
 
+// PlayerGuessingVC
+"comp_num_less" = "Computer's num is less";
+"comp_num_greater" = "Computer's num is greater";
+
 // Final VC
 "score" = "Score:";
 "players_tries_count" = "Your tries cound: ";
