@@ -32,6 +32,7 @@
 		6772E710280C24CC00565376 /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6772E70F280C24CC00565376 /* FinalViewController.swift */; };
 		6772E712280C253E00565376 /* FinalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6772E711280C253E00565376 /* FinalView.swift */; };
 		6772E714280C4A0400565376 /* PlayerGuessingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6772E713280C4A0400565376 /* PlayerGuessingPresenter.swift */; };
+		6772E716280C615C00565376 /* FinalViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6772E715280C615C00565376 /* FinalViewPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		6772E70F280C24CC00565376 /* FinalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalViewController.swift; sourceTree = "<group>"; };
 		6772E711280C253E00565376 /* FinalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalView.swift; sourceTree = "<group>"; };
 		6772E713280C4A0400565376 /* PlayerGuessingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerGuessingPresenter.swift; sourceTree = "<group>"; };
+		6772E715280C615C00565376 /* FinalViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalViewPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +207,7 @@
 			children = (
 				6772E70F280C24CC00565376 /* FinalViewController.swift */,
 				6772E711280C253E00565376 /* FinalView.swift */,
+				6772E715280C615C00565376 /* FinalViewPresenter.swift */,
 			);
 			path = FinalScreen;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 				6772E6CD280B1A8600565376 /* ComputerIsGessingViewController.swift in Sources */,
 				6772E6C1280AE10D00565376 /* MainRouter.swift in Sources */,
 				6772E680280A9B7300565376 /* AppDelegate.swift in Sources */,
+				6772E716280C615C00565376 /* FinalViewPresenter.swift in Sources */,
 				6772E6AB280ABE1500565376 /* PlayerThinkingOfNumberViewController.swift in Sources */,
 				6772E6A9280AB1CA00565376 /* CenteredCustomLabel.swift in Sources */,
 				6772E6D1280B21A300565376 /* ComputerIsGuessingPresenter.swift in Sources */,

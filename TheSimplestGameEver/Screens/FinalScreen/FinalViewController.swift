@@ -9,6 +9,7 @@ import UIKit
 
 class FinalViewController: UIViewController {
     weak var router: MainRouterProtocol!
+    var presenter: FinalVCPresenterProtocol?
     private var backgroundView: FinalViewProtocol { view as! FinalViewProtocol }
     
     override func loadView() {
@@ -23,6 +24,14 @@ class FinalViewController: UIViewController {
             self.router.pushStartVC()
         }
     }
+}
+
+extension FinalViewController: FinalVCProtocol {
+    
+}
+
+protocol FinalVCPresenterProtocol: AnyObject {
+    
 }
 
 protocol FinalViewProtocol {

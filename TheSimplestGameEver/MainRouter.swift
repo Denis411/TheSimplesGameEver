@@ -46,6 +46,7 @@ class MainRouter : MainRouterProtocol {
     
     func pushFinalVC() {
         let finalVC = FinalViewController()
+        finalVC.presenter = FinalVCPresenter(vc: finalVC, dataContainer: dataContainer)
         finalVC.router = self
         navController.pushViewController(finalVC, animated: true)
     }
