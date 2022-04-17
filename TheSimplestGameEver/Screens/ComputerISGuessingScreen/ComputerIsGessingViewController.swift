@@ -16,6 +16,9 @@ class ComputerIsGuessingViewController: UIViewController, ComputerIsGuessingVCPr
         super.loadView()
         view = ComputerGuessingView()
         view.backgroundColor = .white
+        backgroundView.setEqualButton { [unowned self] in
+            self.router.pushPlayerGuessingVC()
+        }
     }
     
     override func viewDidLoad() {
