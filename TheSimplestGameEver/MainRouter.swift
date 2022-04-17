@@ -31,8 +31,8 @@ class MainRouter : MainRouterProtocol {
     }
     
     func pushComputerIsGuessingVC() {
-        let computerIsGuessingVC = ComputerIsGessingViewController()
-        computerIsGuessingVC.router = self
+        let computerIsGuessingVC = ComputerIsGuessingViewController()
+        computerIsGuessingVC.presenter = ComputerIsGuessingPresenter(view: computerIsGuessingVC, dataContainer: dataContainer)
         navController.pushViewController(computerIsGuessingVC, animated: true)
     }
 }

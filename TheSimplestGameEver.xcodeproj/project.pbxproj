@@ -26,6 +26,7 @@
 		6772E6CD280B1A8600565376 /* ComputerIsGessingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6772E6CC280B1A8600565376 /* ComputerIsGessingViewController.swift */; };
 		6772E6D1280B21A300565376 /* ComputerIsGuessingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6772E6D0280B21A300565376 /* ComputerIsGuessingPresenter.swift */; };
 		6772E6D3280B2E1A00565376 /* MyNumberIsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6772E6D2280B2E1A00565376 /* MyNumberIsButton.swift */; };
+		6772E704280BE74000565376 /* ComputerGuessingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6772E703280BE74000565376 /* ComputerGuessingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		6772E6CC280B1A8600565376 /* ComputerIsGessingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputerIsGessingViewController.swift; sourceTree = "<group>"; };
 		6772E6D0280B21A300565376 /* ComputerIsGuessingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputerIsGuessingPresenter.swift; sourceTree = "<group>"; };
 		6772E6D2280B2E1A00565376 /* MyNumberIsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNumberIsButton.swift; sourceTree = "<group>"; };
+		6772E703280BE74000565376 /* ComputerGuessingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputerGuessingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 			children = (
 				6772E6CC280B1A8600565376 /* ComputerIsGessingViewController.swift */,
 				6772E6D0280B21A300565376 /* ComputerIsGuessingPresenter.swift */,
+				6772E703280BE74000565376 /* ComputerGuessingView.swift */,
 			);
 			path = ComputerISGuessingScreen;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 				6772E6AD280AC1DB00565376 /* CustomTextField.swift in Sources */,
 				6772E695280A9D5100565376 /* CustomBlueButton.swift in Sources */,
 				6772E6C3280AE13D00565376 /* MainRouterProtocol.swift in Sources */,
+				6772E704280BE74000565376 /* ComputerGuessingView.swift in Sources */,
 				6772E684280A9B7300565376 /* StartViewController.swift in Sources */,
 				6772E6B0280AD20500565376 /* DataContainer.swift in Sources */,
 				6772E6CA280AF63800565376 /* PlayerThinkingPresenter.swift in Sources */,
