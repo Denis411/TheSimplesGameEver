@@ -42,4 +42,10 @@ class MainRouter : MainRouterProtocol {
         playerGuessingVC.router = self
         navController.pushViewController(playerGuessingVC, animated: true)
     }
+    
+    func pushFinalVC() {
+        let finalVC = FinalViewController()
+        finalVC.router = self
+        navController.pushViewController(finalVC, animated: true)
+    }
 }

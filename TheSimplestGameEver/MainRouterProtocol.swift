@@ -16,4 +16,5 @@ protocol MainRouterProtocol: AnyObject {
     func pushPlayerThinkingVC()
     func pushComputerIsGuessingVC()
     func pushPlayerGuessingVC()
+    func pushFinalVC()
 }
