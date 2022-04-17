@@ -5,3 +5,9 @@
 // PlayerThinkingOfNumber screen
 "enter_the_number" = "Enter the Number";
 "think_of_a_number" = "Think of some number";
+
+// ComputerGuessingVC
+"number_of_comuter_tries" = "Try ";
+"computer_is_guessing" = "Computer is guessing";
+"your_number_is" = "Your number is - ";
+"my_number_is" = "My number is ...";
