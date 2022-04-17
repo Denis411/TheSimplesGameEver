@@ -20,9 +20,9 @@ final class PlayerGuessingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
+        presenter.setNumberOfPlayersTries()
         backgroundView.blockButton(isBlocked: true)
         backgroundView.setDelegate(delegate: self)
-        backgroundView.setNumberOfPlayerTries(num: 5)
         backgroundView.setInfromationAlert(text: "Info")
         openToNextVC()
     }
@@ -44,16 +44,21 @@ extension PlayerGuessingViewController: PlayerGuessingVCProtocol {
     func blockButton(isBlocked: Bool) {
         backgroundView.blockButton(isBlocked: isBlocked)
     }
+    
+    func setNumOfPlayerTries(num: Int8) {
+        backgroundView.setNumberOfPlayerTries(num: num + 1)
+    }
 }
 
 protocol PlayerGuessingVCProtocol: AnyObject {
     func blockButton(isBlocked: Bool)
+    func setNumOfPlayerTries(num: Int8)
 }
 
 protocol PlayerGuessingViewProtocol: AnyObject {
     func setDelegate(delegate: PlayerGuessingViewDelegate)
     func addButtonAction(action: @escaping ButtonAction)
-    func setNumberOfPlayerTries(num: Int)
+    func setNumberOfPlayerTries(num: Int8)
     func setInfromationAlert(text: String)
     func blockButton(isBlocked: Bool)
 }

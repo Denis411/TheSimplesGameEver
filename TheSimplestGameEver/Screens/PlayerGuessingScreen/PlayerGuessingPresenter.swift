@@ -28,8 +28,17 @@ final class PlayerGuessingPresenter: PlayerGuessingPresenterProtocol {
             view?.blockButton(isBlocked: false)
         }
     }
+    
+    func setNumberOfPlayersTries() {
+        guard let num = dataContainer?.getPlayerNumOfTries() else {
+            fatalError("data container does not exist.")
+        }
+        
+        view?.setNumOfPlayerTries(num: num)
+    }
 }
 
 protocol PlayerGuessingPresenterProtocol: AnyObject {
     func validateString(string: String)
+    func setNumberOfPlayersTries()
 }

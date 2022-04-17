@@ -174,7 +174,7 @@ extension PlayerGuessingView: PlayerGuessingViewProtocol {
         confrimButtonAction = action
     }
     
-    func setNumberOfPlayerTries(num: Int) {
+    func setNumberOfPlayerTries(num: Int8) {
         playersTryTitle.text = "Try number \(num)"
     }
     
