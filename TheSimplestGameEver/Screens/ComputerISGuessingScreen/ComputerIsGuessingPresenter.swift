@@ -30,9 +30,10 @@ final class ComputerIsGuessingPresenter: ComputerIsGuessingPresenterProtocol {
               let lowerBound = dataContainer?.getLowerBound() else {
                   return
               }
-        
-        let generatedNum = Int8.random(in: lowerBound...upperBound)
-        view?.setRandomNumber(num: generatedNum)
+//      binary search
+        let stride = upperBound - lowerBound
+        let num = stride / 2
+        view?.setRandomNumber(num: num)
     }
     
     func setUpperBound(num: Int8) {

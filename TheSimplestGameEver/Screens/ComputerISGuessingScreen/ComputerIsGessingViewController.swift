@@ -11,7 +11,7 @@ final class ComputerIsGuessingViewController: UIViewController {
     weak var router: MainRouterProtocol!
     var presenter: ComputerIsGuessingPresenterProtocol!
     private var backgroundView: ComputerGuessingViewProtocol { view as! ComputerGuessingViewProtocol }
-    private var randomNum: Int8 = -101
+    private var randomNum: Int8 = 100
     
     override func loadView() {
         super.loadView()
