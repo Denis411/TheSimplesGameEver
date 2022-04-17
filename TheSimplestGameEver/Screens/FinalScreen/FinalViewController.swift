@@ -20,6 +20,9 @@ class FinalViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
+        presenter?.setPlayerTries()
+        presenter?.setComputersTries()
+        defineWinner()
         backgroundView.setButtonAction { [unowned self] in
             self.router.pushStartVC()
         }
@@ -27,11 +30,38 @@ class FinalViewController: UIViewController {
 }
 
 extension FinalViewController: FinalVCProtocol {
+    func defineWinner() {
+        guard let winner = presenter?.defineWinner() else {
+            return
+        }
+        
+        var infoText: String = "none"
+        
+        switch winner {
+        case .player:
+            infoText = NSLocalizedString("you_win", comment: "")
+        case .computer:
+            infoText = NSLocalizedString("computer_wins", comment: "")
+        case .none:
+            infoText = NSLocalizedString("no_winner", comment: "")
+        }
+        
+        backgroundView.setInformationTitle(text: infoText)
+    }
     
+    func setPlayerTries(num: Int8) {
+        backgroundView.setPlayerTries(num: num)
+    }
+    
+    func setComputersTries(num: Int8) {
+        backgroundView.setComputerTries(num: num)
+    }
 }
 
 protocol FinalVCPresenterProtocol: AnyObject {
-    
+    func setPlayerTries()
+    func setComputersTries()
+    func defineWinner() -> Winner 
 }
 
 protocol FinalViewProtocol {
