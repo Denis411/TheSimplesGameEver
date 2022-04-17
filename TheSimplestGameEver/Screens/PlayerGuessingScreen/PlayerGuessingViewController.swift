@@ -20,17 +20,41 @@ final class PlayerGuessingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        presenter.setNumberOfPlayersTries()
         backgroundView.blockButton(isBlocked: true)
         backgroundView.setDelegate(delegate: self)
-        backgroundView.setInfromationAlert(text: "Info")
-        openToNextVC()
+        updateLabels()
+        pressGuessButton()
     }
     
-    private func openToNextVC() {
+    private func updateLabels() {
+        presenter.displayNumberOfPlayersTries()
         presenter.incrementNumberOfPlayersTries()
+        
+        switch presenter.giveResultOfComparison() {
+        case .equal:
+            return
+        case .greater:
+            backgroundView.setInfromationAlert(text: NSLocalizedString("comp_num_greater", comment: ""))
+        case .less:
+            backgroundView.setInfromationAlert(text: NSLocalizedString("comp_num_less", comment: ""))
+        default:
+            return
+        }
+    }
+    
+    private func pressGuessButton() {
+        
         backgroundView.addButtonAction { [weak self] in
-            self?.router.pushFinalVC()
+            switch self?.presenter.giveResultOfComparison() {
+            case .equal:
+                self?.router.pushFinalVC()
+            case .greater:
+                self?.updateLabels()
+            case .less:
+                self?.updateLabels()
+            default:
+                fatalError("How come?")
+            }
         }
     }
 }

@@ -190,7 +190,6 @@ extension PlayerGuessingView: PlayerGuessingViewProtocol {
         guard let text = textFieldForNumber.text else {
             return
         }
-        
         validateInput(text: text)
     }
     
