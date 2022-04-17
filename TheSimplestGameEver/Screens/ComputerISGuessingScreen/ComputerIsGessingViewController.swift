@@ -32,7 +32,7 @@ final class ComputerIsGuessingViewController: UIViewController {
         backgroundView.setEqualButton { [unowned self] in
             print("player's number is \(randomNum)")
             presenter.setLowwerBound(num: 0)
-            presenter.setUpperBound(num: 0)
+            presenter.setUpperBound(num: 100)
             self.router.pushPlayerGuessingVC()
         }
     }

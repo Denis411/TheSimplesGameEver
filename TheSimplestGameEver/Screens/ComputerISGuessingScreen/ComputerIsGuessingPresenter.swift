@@ -11,8 +11,6 @@ import UIKit
 final class ComputerIsGuessingPresenter: ComputerIsGuessingPresenterProtocol {
     weak var view: ComputerIsGuessingVCProtocol?
     weak var dataContainer: DataContainerProtocol?
-    private var upperBound: Int8 = 0
-    private var lowwerBound: Int8 = 100
     
     init(view: ComputerIsGuessingVCProtocol, dataContainer: DataContainerProtocol) {
         self.view = view
@@ -28,16 +26,21 @@ final class ComputerIsGuessingPresenter: ComputerIsGuessingPresenterProtocol {
     }
     
     func guessPlayersNumber() {
-        let generatedNum = Int8.random(in: upperBound...lowwerBound)
+        guard let upperBound = dataContainer?.getUpperBound(),
+              let lowerBound = dataContainer?.getLowerBound() else {
+                  return
+              }
+        
+        let generatedNum = Int8.random(in: lowerBound...upperBound)
         view?.setRandomNumber(num: generatedNum)
     }
     
     func setUpperBound(num: Int8) {
-        upperBound = num
+        dataContainer?.setUpperBound(num: num)
     }
     
     func setLowwerBound(num: Int8) {
-        lowwerBound = num
+        dataContainer?.setLowerBound(num: num)
     }
     
     func increaseNumberOfTriesByOne() {
