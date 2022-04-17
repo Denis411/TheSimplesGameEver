@@ -9,7 +9,7 @@ import UIKit
 
 typealias ButtonAction = () -> ()
 
-class ComputerGuessingView: UIView {
+final class ComputerGuessingView: UIView {
     private let tryNumberLabel = CenteredCustomLabel()
     private let computerIsGuessingNumber = CenteredCustomLabel()
     private let yourNumIs = CenteredCustomLabel()
@@ -156,12 +156,12 @@ extension ComputerGuessingView: ComputerGuessingViewProtocol {
         lessButtonAction = action
     }
     
-    func setNumberOfTriesTitle(num: Int) {
+    func setNumberOfComputerTries(num: Int8) {
         tryNumberLabel.text = NSLocalizedString("number_of_comuter_tries", comment: "") + "\(num)"
     }
     
-    func setYourNumIsTitle(num: Int) {
-        yourNumIs.text = NSLocalizedString("your_number_is", comment: "") + "\(num)"
+    func setYourNumIsTitle(num: Int8) {
+        yourNumIs.text = NSLocalizedString("your_number_is", comment: "") + "\(num) ?"
     }
 
 //  private methods to work inside internal ones
