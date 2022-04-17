@@ -37,8 +37,8 @@ class PlayerThinkingOfNumberViewController: UIViewController {
         
         textFieldForNumber.topAnchor.constraint(equalTo: view.topAnchor, constant: 50).isActive = true
         textFieldForNumber.heightAnchor.constraint(equalToConstant: 40).isActive = true
-        textFieldForNumber.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30).isActive = true
-        textFieldForNumber.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30).isActive = true
+        textFieldForNumber.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 30).isActive = true
+        textFieldForNumber.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -30).isActive = true
     }
     
     @objc private func openNextVC() {

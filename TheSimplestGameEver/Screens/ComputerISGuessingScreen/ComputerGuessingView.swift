@@ -127,7 +127,9 @@ extension ComputerGuessingView {
     }
     
     private func setUpHeightAndWidthAndBottomButtons(button: UIButton) {
-        let proportionOfScreen = UIScreen.main.bounds.width * 0.25
+        let isWidthGreaterThanHeight = UIScreen.main.bounds.width > UIScreen.main.bounds.height
+        let proportionOfScreen = isWidthGreaterThanHeight ?
+        UIScreen.main.bounds.height * 0.25 : UIScreen.main.bounds.width * 0.25
         button.heightAnchor.constraint(equalToConstant: proportionOfScreen).isActive = true
         button.widthAnchor.constraint(equalToConstant: proportionOfScreen).isActive = true
         button.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -50).isActive = true
