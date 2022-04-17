@@ -14,8 +14,12 @@ Localization: EN/RU
 
 Drawbacks: 
 1)I did not finish working with keyboard when using on a real device.
+
 2)Landscape layout is buggy.
+
 3)Some minor logic issues.
+
+4)Typos
 
 
 
