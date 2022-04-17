@@ -19,6 +19,9 @@ class FinalViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
+        backgroundView.setButtonAction { [unowned self] in
+            self.router.pushStartVC()
+        }
     }
 }
 

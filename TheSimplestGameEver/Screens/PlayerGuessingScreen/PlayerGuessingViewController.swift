@@ -21,8 +21,8 @@ class PlayerGuessingViewController: UIViewController {
         view.backgroundColor = .white
         backgroundView.setNumberOfPlayerTries(num: 5)
         backgroundView.setInfromationAlert(text: "Info")
-        backgroundView.addButtonAction {
-            print("hi")
+        backgroundView.addButtonAction { [weak self] in
+            self?.router.pushFinalVC()
         }
     }
 }
