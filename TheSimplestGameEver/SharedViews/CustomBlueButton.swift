@@ -28,11 +28,21 @@ class CustomBlueButton: UIButton {
     func setUpBottomConstraints(for controller: UIViewController) {
         controller.view.addSubview(self)
         self.translatesAutoresizingMaskIntoConstraints = false
-        self.leadingAnchor.constraint(equalTo: controller.view.leadingAnchor, constant: 25).isActive = true
-        self.trailingAnchor.constraint(equalTo: controller.view.trailingAnchor, constant: -25).isActive = true
+        self.leadingAnchor.constraint(equalTo: controller.view.safeAreaLayoutGuide.leadingAnchor, constant: 25).isActive = true
+        self.trailingAnchor.constraint(equalTo: controller.view.safeAreaLayoutGuide.trailingAnchor, constant: -25).isActive = true
         self.heightAnchor.constraint(equalToConstant: 50).isActive = true
         self.centerXAnchor.constraint(equalTo: controller.view.centerXAnchor).isActive = true
-        self.bottomAnchor.constraint(equalTo: controller.view.bottomAnchor, constant: -25).isActive = true
+        self.bottomAnchor.constraint(equalTo: controller.view.safeAreaLayoutGuide.bottomAnchor, constant: -25).isActive = true
+    }
+    
+    func setUpBottomConstraints(for view: UIView) {
+        view.addSubview(self)
+        self.translatesAutoresizingMaskIntoConstraints = false
+        self.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 25).isActive = true
+        self.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -25).isActive = true
+        self.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        self.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        self.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -25).isActive = true
     }
 }
 
