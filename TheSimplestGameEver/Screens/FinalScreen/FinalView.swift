@@ -31,11 +31,8 @@ final class FinalView: UIView {
     }
     
     private func setUpTexts() {
-        topInformationTitle.text = "Score:"
-        mainMenuButton.setTitle("Main menu", for: .normal)
-        playersScoreTitle.text = "some text goes here"
-        computersScoreTitle.text = "some text goes here"
-        infromationAlertTitle.text = "some text goes here"
+        topInformationTitle.text = NSLocalizedString("score", comment: "")
+        mainMenuButton.setTitle(NSLocalizedString("main_menu", comment: ""), for: .normal)
     }
     
     private func setUpStackView() {
@@ -91,11 +88,11 @@ extension FinalView {
 
 extension FinalView: FinalViewProtocol {
     func setPlayerTries(num: Int8) {
-        playersScoreTitle.text = "Your tries conut: \(num)"
+        playersScoreTitle.text = NSLocalizedString("players_tries_count", comment: "") + String(num)
     }
     
     func setComputerTries(num: Int8) {
-        computersScoreTitle.text = "Computer's tries cound: \(num)"
+        computersScoreTitle.text = NSLocalizedString("computer_tries_count", comment: "") + String(num)
     }
     
     func setInformationTitle(text: String) {

@@ -11,3 +11,11 @@
 "computer_is_guessing" = "Компьютер угадывает";
 "your_number_is" = "Ваш номер - ";
 "my_number_is" = "Мой нщмер ...";
+
+// Final VC
+"score" = "Оценка:";
+"players_tries_count" = "Ваши попытки учтены: ";
+"computer_tries_count" = "Количество попыток компьютера: ";
+"you_win" = "Вы выиграли";
+"computer_wins" = "Компьютер выигрывает";
+"main_menu" = "Главное меню";

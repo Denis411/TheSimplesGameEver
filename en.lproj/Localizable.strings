@@ -11,3 +11,11 @@
 "computer_is_guessing" = "Computer is guessing";
 "your_number_is" = "Your number is - ";
 "my_number_is" = "My number is ...";
+
+// Final VC
+"score" = "Score:";
+"players_tries_count" = "Your tries cound: ";
+"computer_tries_count" = "Computer's tries cound: ";
+"you_win" = "You win";
+"computer_wins" = "Computer wins";
+"main_menu" = "Main menu";
