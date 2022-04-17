@@ -28,6 +28,7 @@ final class PlayerGuessingViewController: UIViewController {
     }
     
     private func openToNextVC() {
+        presenter.incrementNumberOfPlayersTries()
         backgroundView.addButtonAction { [weak self] in
             self?.router.pushFinalVC()
         }
@@ -36,7 +37,7 @@ final class PlayerGuessingViewController: UIViewController {
 
 extension PlayerGuessingViewController: PlayerGuessingViewDelegate {
     func validateInput(text: String) {
-        presenter?.validateString(string: text)
+        presenter.validateString(string: text)
     }
 }
 

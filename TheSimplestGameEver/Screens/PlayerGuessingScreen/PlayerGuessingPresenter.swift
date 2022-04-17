@@ -8,7 +8,7 @@
 import Foundation
 
 final class PlayerGuessingPresenter: PlayerGuessingPresenterProtocol {
-    var view: PlayerGuessingVCProtocol?
+    weak var view: PlayerGuessingVCProtocol?
     weak var dataContainer: DataContainerProtocol?
     
     init(view: PlayerGuessingVCProtocol, dataContainer: DataContainerProtocol) {
@@ -36,9 +36,18 @@ final class PlayerGuessingPresenter: PlayerGuessingPresenterProtocol {
         
         view?.setNumOfPlayerTries(num: num)
     }
+    
+    func incrementNumberOfPlayersTries() {
+        guard let oldCount = dataContainer?.getPlayerNumOfTries() else {
+            return
+        }
+        
+        dataContainer?.setPlayerNumOfTries(num: oldCount + 1)
+    }
 }
 
 protocol PlayerGuessingPresenterProtocol: AnyObject {
     func validateString(string: String)
     func setNumberOfPlayersTries()
+    func incrementNumberOfPlayersTries()
 }
