@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PlayerGuessingView: UIView {
+final class PlayerGuessingView: UIView {
     private let playersTryTitle = CenteredCustomLabel()
     private let descriptionTitle = CenteredCustomLabel()
     private let informationAlert = CenteredCustomLabel()
@@ -16,11 +16,13 @@ class PlayerGuessingView: UIView {
     private let confirmButton = CustomBlueButton()
     
     private var confrimButtonAction: ButtonAction?
+    var delegate: PlayerGuessingViewDelegate?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         setUpTexts()
         NotificationCenter.default.addObserver(self, selector: #selector(layoutAllSubviews), name: UIDevice.orientationDidChangeNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(checkInputString), name: UITextField.textDidChangeNotification, object: nil)
         layoutAllSubviews()
         confirmButton.addTarget(self, action: #selector(performAction), for: .touchUpInside)
     }
@@ -157,7 +159,17 @@ extension PlayerGuessingView {
     }
 }
 
+extension PlayerGuessingView : PlayerGuessingViewDelegate {
+    func validateInput(text: String) {
+        delegate?.validateInput(text: text)
+    }
+}
+
 extension PlayerGuessingView: PlayerGuessingViewProtocol {
+    func setDelegate(delegate: PlayerGuessingViewDelegate) {
+        self.delegate = delegate as! PlayerGuessingViewDelegate
+    }
+    
     func addButtonAction(action: @escaping ButtonAction) {
         confrimButtonAction = action
     }
@@ -173,4 +185,20 @@ extension PlayerGuessingView: PlayerGuessingViewProtocol {
     @objc private func performAction() {
         confrimButtonAction?()
     }
+    
+    @objc private func checkInputString() {
+        guard let text = textFieldForNumber.text else {
+            return
+        }
+        
+        validateInput(text: text)
+    }
+    
+    func blockButton(isBlocked: Bool) {
+        confirmButton.blockButton(isBlocked)
+    }
+}
+
+protocol PlayerGuessingViewDelegate {
+    func validateInput(text: String)
 }

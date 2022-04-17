@@ -39,6 +39,7 @@ class MainRouter : MainRouterProtocol {
     
     func pushPlayerGuessingVC() {
         let playerGuessingVC = PlayerGuessingViewController()
+        playerGuessingVC.presenter = PlayerGuessingPresenter(view: playerGuessingVC, dataContainer: dataContainer)
         playerGuessingVC.router = self
         navController.pushViewController(playerGuessingVC, animated: true)
     }

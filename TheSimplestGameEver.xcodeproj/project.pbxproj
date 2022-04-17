@@ -31,6 +31,7 @@
 		6772E70B280C08B100565376 /* PlayerGuessingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6772E70A280C08B100565376 /* PlayerGuessingView.swift */; };
 		6772E710280C24CC00565376 /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6772E70F280C24CC00565376 /* FinalViewController.swift */; };
 		6772E712280C253E00565376 /* FinalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6772E711280C253E00565376 /* FinalView.swift */; };
+		6772E714280C4A0400565376 /* PlayerGuessingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6772E713280C4A0400565376 /* PlayerGuessingPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		6772E70A280C08B100565376 /* PlayerGuessingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerGuessingView.swift; sourceTree = "<group>"; };
 		6772E70F280C24CC00565376 /* FinalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalViewController.swift; sourceTree = "<group>"; };
 		6772E711280C253E00565376 /* FinalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalView.swift; sourceTree = "<group>"; };
+		6772E713280C4A0400565376 /* PlayerGuessingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerGuessingPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +195,7 @@
 			children = (
 				6772E708280C088300565376 /* PlayerGuessingViewController.swift */,
 				6772E70A280C08B100565376 /* PlayerGuessingView.swift */,
+				6772E713280C4A0400565376 /* PlayerGuessingPresenter.swift */,
 			);
 			path = PlayerGuessingScreen;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 			files = (
 				6772E6AD280AC1DB00565376 /* CustomTextField.swift in Sources */,
 				6772E710280C24CC00565376 /* FinalViewController.swift in Sources */,
+				6772E714280C4A0400565376 /* PlayerGuessingPresenter.swift in Sources */,
 				6772E695280A9D5100565376 /* CustomBlueButton.swift in Sources */,
 				6772E6C3280AE13D00565376 /* MainRouterProtocol.swift in Sources */,
 				6772E712280C253E00565376 /* FinalView.swift in Sources */,
