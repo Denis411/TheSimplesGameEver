@@ -22,10 +22,14 @@ final class ComputerIsGuessingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         pressEqualButton()
-        presenter.setNumberOfComputerTries()
-        presenter.guessPlayersNumber()
+        updateLabels()
         setGreaterThanButtonAction()
         setLessThanButtonAction()
+    }
+    
+    private func updateLabels() {
+        presenter.setNumberOfComputerTries()
+        presenter.guessPlayersNumber()
     }
     
     private func pressEqualButton() {
@@ -40,8 +44,8 @@ final class ComputerIsGuessingViewController: UIViewController {
     private func setGreaterThanButtonAction() {
         backgroundView.setGreaterButton { [unowned self] in
             print("Greater than \(randomNum)")
-            self.router.pushPlayerGuessingVC()
             self.presenter.setLowwerBound(num: self.randomNum)
+            self.updateLabels()
         }
     }
     
@@ -49,7 +53,7 @@ final class ComputerIsGuessingViewController: UIViewController {
         backgroundView.setLessButton { [unowned self] in
             print("less than \(randomNum)")
             self.presenter.setUpperBound(num: self.randomNum)
-            self.router.pushPlayerGuessingVC()
+            self.updateLabels()
         }
     }
 }
