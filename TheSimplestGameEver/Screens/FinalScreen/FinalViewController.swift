@@ -24,6 +24,7 @@ class FinalViewController: UIViewController {
         presenter?.setComputersTries()
         defineWinner()
         backgroundView.setButtonAction { [unowned self] in
+            self.presenter?.nolifyCounter()
             self.router.pushStartVC()
         }
     }
@@ -61,7 +62,8 @@ extension FinalViewController: FinalVCProtocol {
 protocol FinalVCPresenterProtocol: AnyObject {
     func setPlayerTries()
     func setComputersTries()
-    func defineWinner() -> Winner 
+    func defineWinner() -> Winner
+    func nolifyCounter()
 }
 
 protocol FinalViewProtocol {

@@ -46,6 +46,10 @@ final class FinalVCPresenter: FinalVCPresenterProtocol {
             return .none
         }
     }
+    
+    func nolifyCounter() {
+        dataContainer?.nullifySelf()
+    }
 }
 
 protocol FinalVCProtocol: AnyObject {
