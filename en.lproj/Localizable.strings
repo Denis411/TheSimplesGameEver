@@ -19,3 +19,4 @@
 "you_win" = "You win";
 "computer_wins" = "Computer wins";
 "main_menu" = "Main menu";
+"no_winner" = "You both are winners";
