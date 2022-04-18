@@ -1,4 +1,4 @@
-# TheSimplesGameEver
+# TheSimplestGameEver
 The project was created for practice
 
 Architecture : 1st screen: MVC + Router, the rest: MVP + Router.
