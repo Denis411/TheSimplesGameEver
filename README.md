@@ -1,7 +1,7 @@
 # TheSimplesGameEver
 The project was created for practice
 
-Architecture : 1sh screen: MVC + Router, the rest: MVP + Router.
+Architecture : 1st screen: MVC + Router, the rest: MVP + Router.
 
 Using MVVM would be possible, however I didn't use reactive programming or SwiftUI, so MVP is okay.
 Using VIPER is too boilerplate.
@@ -14,7 +14,7 @@ Localization: EN/RU
 
 Drawbacks: 
 
-1)I did not finish working with keyboard when using on a real device.
+1)I did not finish working on keyboard when using on a real device.
 
 2)Landscape layout is buggy.
 
